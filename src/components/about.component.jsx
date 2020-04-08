@@ -1,5 +1,6 @@
 import React from 'react';
 import me from '../images/profile.png';
+import resume from '../assets/resume.pdf';
 
 const AboutSection = () => {
   return(
@@ -45,7 +46,7 @@ const AboutSection = () => {
 
               </div>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1926nfM15jLOUz9b2GWOfLRkLgDcFZUPP/view">
+                <a target="_blank" class="cta-btn cta-btn--resume" href={resume}>
                   View Resume
                 </a>
               </span>
