@@ -1,4 +1,5 @@
 import React from 'react';
+import me from '../images/profile.png';
 
 const AboutSection = () => {
   return(
@@ -14,7 +15,7 @@ const AboutSection = () => {
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="./assets/profile.png"
+                src={me}
                 alt="Profile Image"
               />
             </div>

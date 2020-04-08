@@ -1,4 +1,7 @@
 import React from 'react';
+import dripClothingImg from '../images/dripclothing.png';
+import pastoriaImg from '../images/pastoria.png';
+import linkifyImg from '../images/linkify.png';
 
 const ProjectSection = () => {
   return (
@@ -31,7 +34,7 @@ const ProjectSection = () => {
             <div class="project-wrapper__image">
               <a href="https://dripclothing.netlify.com/" target="_blank">
                 <div data-tilt class="thumbnail rounded">
-                  <img class="img-fluid" src="./assets/dripclothing.png" />
+                  <img class="img-fluid" src={dripClothingImg} />
                 </div>
               </a>
             </div>
@@ -59,7 +62,7 @@ const ProjectSection = () => {
             <div class="project-wrapper__image">
               <a href="https://pastoria.netlify.com/" target="_blank">
                 <div data-tilt class="thumbnail rounded">
-                  <img class="img-fluid" src="./assets/pastoria.png" />
+                  <img class="img-fluid" src={pastoriaImg} />
                 </div>
               </a>
             </div>
@@ -87,7 +90,7 @@ const ProjectSection = () => {
             <div class="project-wrapper__image">
               <a href="https://linkify.netlify.com/" target="_blank">
                 <div data-tilt class="thumbnail rounded">
-                  <img class="img-fluid" src="./assets/linkify.png" />
+                  <img class="img-fluid" src={linkifyImg} />
                 </div>
               </a>
             </div>
