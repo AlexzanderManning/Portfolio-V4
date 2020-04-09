@@ -3,10 +3,10 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import HeroSection from "../components/hero-component/hero.component";
-import AboutSection from "../components/about-component/about.component";
+import HeroSection from "../components/hero/hero.component";
+import AboutSection from "../components/about/about.component";
 import ProjectSection from "../components/projects/projects.component";
-import ContactSection from "../components/contact.component/contact.component";
+import ContactSection from "../components/contact/contact.component";
 
 
 const IndexPage = () => (
