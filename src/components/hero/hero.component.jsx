@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Container from '../container/container';
+import styles from './hero-styles.module.scss';
+
+
 const HeroSection = () => {
   return(
-    <div id="hero" class="jumbotron">
-      <div class="container">
+    <div id="hero" class={styles.hero}>
+      <Container>
         <h1 class="hero-title" class="load-hidden">
           Hi, my name is <span class="text-color-main">Alexzander Manning.</span>
           <br />
@@ -14,7 +18,7 @@ const HeroSection = () => {
           <a class="cta-btn cta-btn--hero" href="#about">Learn more</a>
           <a class="cta-btn cta-btn--hero" href="mailto:dmanning4@student.gsu.edu">Get In Touch</a>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

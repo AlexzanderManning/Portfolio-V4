@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Container from '../container/container';
+
+import styles from './footer-styles.module.scss';
+
 const Footer = () => {
   return(
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
+    <footer class="footer navbar-static-bottom" class={styles.background}>
+      <Container>
         <a href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
@@ -24,7 +28,7 @@ const Footer = () => {
         <p class="footer__text">
           © 2020 - Developed by <a href="https://github.com/AlexzanderManning" target="_blank">Alexzander Manning</a>
         </p>
-      </div>
+      </Container>
     </footer>
   );
 }

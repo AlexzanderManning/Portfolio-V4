@@ -1,11 +1,15 @@
 import React from 'react';
-import me from '../images/profile.png';
-import resume from '../assets/resume.pdf';
+
+import Container from '../container/container';
+
+import styles from './about-styles.module.scss';
+import me from '../../images/profile.png';
+import resume from '../../assets/resume.pdf';
 
 const AboutSection = () => {
   return(
-    <section id="about">
-      <div class="container">
+    <section id="about" class={styles.background}>
+      <Container>
         <h2 class="section-title">
           About me
         </h2>
@@ -53,7 +57,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

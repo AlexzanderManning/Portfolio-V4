@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Container from '../container/container';
+
+import styles from './contact-styles.module.scss';
+
 const ContactSection = () => {
   return(
-    <section id="contact">
-      <div class="container">
+    <section id="contact" class={styles.background}>
+      <Container>
         <h2 class="section-title">
           Get In Touch
         </h2>
@@ -17,7 +21,7 @@ const ContactSection = () => {
             href="mailto:dmanning4@student.gsu.edu"
             >Email Me</a>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

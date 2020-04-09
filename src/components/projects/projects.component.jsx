@@ -1,12 +1,16 @@
 import React from 'react';
-import dripClothingImg from '../images/dripclothing.png';
-import pastoriaImg from '../images/pastoria.png';
-import linkifyImg from '../images/linkify.png';
+
+import Container from '../container/container';
+
+import styles from './project-styles.module.scss';
+import dripClothingImg from '../../images/dripclothing.png';
+import pastoriaImg from '../../images/pastoria.png';
+import linkifyImg from '../../images/linkify.png';
 
 const ProjectSection = () => {
   return (
-    <section id="projects">
-    <div class="container">
+    <section id="projects" class={styles.background}>
+    <Container>
       <div class="project-wrapper">
         <h2 class="section-title dark-blue-text">
           Projects
@@ -97,7 +101,7 @@ const ProjectSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   </section>
   );
 }
