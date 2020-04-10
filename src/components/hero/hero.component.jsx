@@ -10,9 +10,9 @@ const HeroSection = () => {
     <div id="hero" class={styles.hero}>
       <Container>
         <h1 className={`${styles.hero__title} load-hidden`}>
-          Hi, my name is{" "}
-          <span class="text-color--primary">Alexzander Manning.</span>
-          <br />I build things for the web.
+          <span class={styles.intro}>Hi, my name is</span>
+          <span class={styles.name}>Alexzander Manning.</span>
+          <br /><span class={styles.description}>I build things for the web.</span>
         </h1>
 
         <p class={`${styles.hero__about} load-hidden`}>
@@ -21,7 +21,7 @@ const HeroSection = () => {
           applications.
         </p>
 
-        <div class="hero-cta" class="load-hidden">
+        <div class="load-hidden mt--3">
           <Button XL utilityClasses="mr--1" href="#about">
             Learn more
           </Button>

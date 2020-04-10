@@ -1,4 +1,9 @@
+@import '../../styles/tools/tools.mixins';
+
 .container{
-  max-width: 60%;
+  max-width: 90%;
   margin: 0 auto;
+  @include desktop{
+    max-width: 70%;
+  }
 }

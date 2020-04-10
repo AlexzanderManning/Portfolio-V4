@@ -1,6 +1,27 @@
-///*------------------------------------*\
-//    #MIXINS
-//\*------------------------------------*/
+// Small devices
+@mixin phone {
+  @media (min-width: 500px) {
+      @content;
+  }
+}
 
-// Global mixins available to the entire project. Define file-specific
-// mixins inside the file to which they relate.
+// Medium devices
+@mixin tablet {
+  @media (min-width: 768px) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin desktop {
+  @media (min-width: 960px) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin large-desktop {
+  @media (min-width: 1200px) {
+      @content;
+  }
+}

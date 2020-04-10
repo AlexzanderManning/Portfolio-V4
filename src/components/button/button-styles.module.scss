@@ -1,11 +1,19 @@
+@import '../../styles/tools/tools.mixins';
+
 .btn {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   position: relative;
   padding: 0.8rem 1rem;
   font-weight: bold;
   line-height: 1;
   z-index: 1;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  @include tablet {
+    display: inline-block;
+  }
+  
 
   &::after {
     content: '';
@@ -88,6 +96,16 @@
 }
 
 .btn__xl{
+  width: 85%;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  @include tablet {
+    width: 30%;
+    margin-right: 1rem;
+  }
+  @include desktop {
+    width: 30%;
+    max-width: 300px;
+  }
 }
