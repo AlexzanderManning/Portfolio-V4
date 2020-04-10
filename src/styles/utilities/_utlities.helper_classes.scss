@@ -2,7 +2,123 @@
 
 // Because we need to override settings coming from other layers, this is the only place where !important is permitted. 
 
-/* Flex Helpers */
+
+/*------------------------------------*\
+  TEXT HELPER CLASSES
+\*------------------------------------*/
+.text-center{
+  text-align: center;
+}
+
+.letter-spacing--1{
+  letter-spacing: .05rem;
+}
+
+.text-color--primary{
+  color:$primary-color;
+}
+
+/**
+ * Simple default styles for headings 1 through 6 for the cases when 
+   don't want to use an heading tag.
+ */
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $font-primary;
+  color: $primary-color;
+}
+
+.h1 {
+  font-size: $font-size-h1;
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: $font-size-h2;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-size: $font-size-h3;
+  line-height: 1.2;
+}
+
+.h4 {
+  font-size: $font-size-h4;
+  line-height: 1.2;
+}
+
+.h5 {
+  font-size: $font-size-h5;
+  line-height: 1.2;
+}
+
+.h6 {
+  font-size: $font-size-h6;
+  line-height: 1.2;
+}
+
+
+
+
+
+/*------------------------------------*\
+  SPACING HELPER CLASSES
+\*------------------------------------*/
+//===========================MARGINS=========================
+.mt--1{ margin-top: 1rem; }
+.mt--2{ margin-top: 2rem; }
+.mt--3{ margin-top: 3rem; }
+.mt--4{ margin-top: 4rem; }
+.mt--5{ margin-top: 5rem; }
+.mt--half{margin-top: .5rem; }
+
+
+.mb--1{ margin-bottom: 1rem; }
+.mb--2{ margin-bottom: 2rem; }
+.mb--3{ margin-bottom: 3rem; }
+.mb--4{ margin-bottom: 4rem; }
+.mb--5{ margin-bottom: 5rem; }
+.mb--half{ margin-bottom: .5rem; }
+
+
+.ml--1{ margin-left: 1rem; }
+.ml--2{ margin-left: 2rem; }
+.ml--3{ margin-left: 3rem; }
+.ml--4{ margin-left: 4rem; }
+.ml--5{ margin-left: 5rem; }
+.ml--half{ margin-left: .5rem; }
+
+
+.mr--1{ margin-right: 1rem; }
+.mr--2{ margin-right: 2rem; }
+.mr--3{ margin-right: 3rem; }
+.mr--4{ margin-right: 4rem; }
+.mr--5{ margin-right: 5rem; }
+.mr--half{ margin-right: .5rem; }
+
+
+
+// ===========================PADDINGS=========================
+.pt--1{ padding-top: 1rem; }
+.pt--2{ padding-top: 2rem; }
+.pt--3{ padding-top: 3rem; }
+.pt--4{ padding-top: 4rem; }
+.pt--5{ padding-top: 5rem; }
+
+
+.pb--1{ padding-bottom: 1rem; }
+.pb--2{ padding-bottom: 2rem; }
+.pb--3{ padding-bottom: 3rem; }
+.pb--4{ padding-bottom: 4rem; }
+.pb--5{ padding-bottom: 5rem; }
+
+
+
+
+/*------------------------------------*\
+  FLEXBOX HELPER CLASSES
+\*------------------------------------*/
 .flex{
   display: flex;
 }
@@ -25,33 +141,4 @@
 
 .flex--align-space-around{
   align-content: space-around;
-}
-
-/* Text Helpers */
-.text-center{
-  text-align: center;
-}
-
-/* Spacing */
-.margin-top--1{
-  margin-top: 1em;
-}
-
-.margin-bottom--1{
-  margin-bottom: 1em;
-}
-
-.margin-y--1{
-  margin: 1em 0;
-}
-
-.padding--half{
-  padding: .5em;
-}
-.padding--1{
-  padding: 1em;
-}
-
-.padding-y--1{
-  padding: 1em 0;
 }
