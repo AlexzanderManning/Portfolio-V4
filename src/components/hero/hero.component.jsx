@@ -9,6 +9,7 @@ const HeroSection = () => {
   return (
     <div id="hero" class={styles.hero}>
       <Container>
+        <div className={styles.container}>
         <h1 className={`${styles.hero__title} load-hidden`}>
           <span class={styles.intro}>Hi, my name is</span>
           <span class={styles.name}>Alexzander Manning.</span>
@@ -30,6 +31,8 @@ const HeroSection = () => {
             Get In Touch
           </Button>
         </div>
+        </div>
+        
       </Container>
     </div>
   );

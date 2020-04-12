@@ -7,6 +7,7 @@
   color: #272341;
   margin: 0 auto;
   margin-top: .5rem;
+
 }
 
 .hero__title{
@@ -18,6 +19,7 @@
   display: block;
   font-size: 1.2rem;
   margin-bottom: .5rem;
+  font-weight: 700;
   @include tablet {
     font-size: 2rem;
   }
@@ -35,7 +37,9 @@
     font-size: 4rem;
   }
   @include desktop{
-    font-size: 5rem;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700 !important;
+    font-size: 4rem;
     margin-bottom: 0;
   }
 }
@@ -46,7 +50,7 @@
     font-size: 3rem;
   }
   @include desktop {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -68,4 +72,12 @@
 
 .buttonContainer{
   margin-top: 5rem;
+}
+
+.container{
+  margin: 0 auto;
+  @include desktop{
+    width: 75%;
+    max-width: 1440px;
+  }
 }

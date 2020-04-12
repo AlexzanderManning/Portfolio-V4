@@ -1,3 +1,116 @@
-.background{
-  background-color: blue;
+@import '../../styles/tools/tools.mixins';
+
+
+
+.background {
+  background-color: #090979;
+  background-image: linear-gradient(
+    135deg,
+    #090979 0%,
+    #00d4ff 100%
+  );
+  color: #fff;
+  height: 100%;
+  border-top: 0px;
+  height: 100%;
+  -webkit-clip-path: none;
+  clip-path: none;
+  padding-bottom: 10vh;
+
+  @include desktop{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    -webkit-backface-visibility: hidden;
+    padding-bottom: 25vh;
+  }  
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.imgContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 4rem;
+}
+
+.aboutWrapper{
+  @include tablet{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
+
+.flexChildren{
+  @include tablet {
+    flex: 0 0 50%;
+    max-width: calc(50% - 2rem);
+    margin: 0 1rem;
+  }
+}
+ 
+.aboutWrapper__infoText{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn{
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  @include desktop{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  @include large-desktop{
+    width: 60%;
+  }
+}
+
+.aboutWrapper__info{
+  color: #fff;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.ul {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  line-height: 2;
+
+  @include desktop {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+
+.container{
+  margin: 0 auto;
+  @include desktop{
+    width: 90%;
+    max-width: 1440px;
+  }
+  @include large-desktop{
+    width: 75%;
+    max-width: 1200px;
+  }
 }
